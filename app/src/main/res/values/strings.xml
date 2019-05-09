@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World!</string>
+    <string name="app_name">CamMonitor</string>
+    <string name="welcome_intro">
+            欢迎使用Android远程监控客户端。\n
+    xmobileapp©2008-2009
+	</string>
+	<string name="btn_new">增加</string>
+	<string name="btn_modify">修改</string>
+	<string name="btn_delete">删除</string>
+	<string name="connect">连接</string>
+	<string name="table_sql">
+	    CREATE TABLE tb_cammonitor_configs(
+	    _id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+	    name VARCHAR(30) NULL,
+	    ip VARCHAR(64) NULL,
+	    port NUMERIC NULL,
+	    username VARCHAR(64) NULL,
+	    password VARCHAR(64) NULL,
+	    client_dir TEXT NULL,
+	    connect_type NUMERIC DEFAULT 1 NULL
+		)
+	</string>
+	<string name="drop_sql">
+		drop table if EXISTS tb_cammonitor_configs;
+	</string>
+	<string name="add_title">远程监控服务设置</string>
+	<string name="add_ip">主机名</string>
+	<string name="add_type">类型</string>
+	<string name="add_port">端口</string>
+	<string name="add_username">用户名</string>
+	<string name="add_password">用户密码</string>
+	<string name="add_localdir">本地目录</string>
+	<string name="btn_test">测试</string>
+	<string name="btn_save">保存</string>
+	<string name="btn_cancle">取消</string>
+	<string name="btn_ok">确定</string>
+	<string name="error">错误</string>
+	<string name="error_ip">请输入主机名</string>
+	<string name="error_port">请输入端口</string>
+	<string name="CamMonitorConfigActivty_Cfg_Name">请输入配置的名称</string>
+	<string name="server_disconnect">断开</string>
+</resources>
