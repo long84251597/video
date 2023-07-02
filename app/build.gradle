@@ -15,11 +15,22 @@ android {
         minSdkVersion 16
         targetSdkVersion 26
     }
-
+    signingConfigs {
+        config {
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile file(keystoreProperties['storeFile'])
+            storePassword keystoreProperties['storePassword']
+        }
+    }
     buildTypes {
         release {
+            signingConfig signingConfigs.config //配置签名文件
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
+
+    
+
 }
