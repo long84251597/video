@@ -1,0 +1,44 @@
+# workflow的名称，会显示在github 的项目的Actions的右边列表中，如下图
+name: DEBUG_CI
+
+# 在满足以下条件触发这个workflow
+on:
+  push:
+    # 在指定的远程分支上，发生推送
+    branches:
+      - master
+jobs:
+# 多个job，如果有多个，每个以“-”开头
+  first-job:
+    # 该job 运行的系统环境，支持ubuntu 、windows、macOS
+    runs-on: ubuntu-latest
+    steps:
+      # 下面是多个step ，每个以“-”开头
+      # step：检查分支
+      - uses: actions/checkout@v1
+      # step：设置jdk版本
+      # step 名称
+      - name: set up JDK 11
+        # 引用公共action
+        uses: actions/setup-java@v3
+        with:
+          # 设置参数
+          distribution: 'zulu'
+          java-version: '11'
+      # step：打包apk
+      - name: load sdk
+        uses: android-actions/setup-android@v2
+      #- name: start android 26
+      #  run: sdkmanager "platforms;android-26"
+      - name: grant execute to gradlew
+        # 运行命令
+        run: chmod +x gradlew
+      - name: Build with Gradle
+        run: bash ./gradlew assembleRelease
+        #step：上传apk 到action，在右上角查看
+# 官方文档 https://help.github.com/cn/actions/automating-your-workflow-with-github-actions/persisting-workflow-data-using-artifacts#uploading-build-and-test-artifacts
+      - name: Upload APK
+        uses: actions/upload-artifact@v2
+        with:
+         name: app
+         path: app/build/outputs/apk/release/app-release.apk
