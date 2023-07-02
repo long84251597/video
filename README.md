@@ -7,9 +7,13 @@
 
 
 ## 手机端界面
+
 查看监控画面
-![](https://github.com/yaunsine/video/blob/master/imgs/app.jpg?raw=true)
+
+<img alt="" src="https://github.com/yaunsine/video/blob/master/imgs/app.jpg?raw=true" width="300px"/>
 
 ## 电脑界面
+
 实时捕获监控画面
-![](https://github.com/yaunsine/video/blob/master/imgs/pc.png?raw=true)
+
+<img alt="" src="https://github.com/yaunsine/video/blob/master/imgs/pc.png?raw=true" width="300px"/>
