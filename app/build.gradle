@@ -1,7 +1,6 @@
 android {
     compileSdkVersion 26
     buildToolsVersion "25.0.3"
-
     defaultConfig {
         applicationId "com.xmobileapp.cammonitor"
         minSdkVersion 16
