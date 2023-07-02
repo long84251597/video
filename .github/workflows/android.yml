@@ -26,8 +26,9 @@ jobs:
           java-version: 1.8
       # step：打包apk
       - name: load sdk
-      - uses: android-actions/setup-android@v2
-      - run: sdkmanager "platforms;android-26"
+        uses: android-actions/setup-android@v2
+      - name: start android 26
+        run: sdkmanager "platforms;android-26"
       - name: Build with Gradle
         # 运行命令
         run: chmod +x gradlew &&./gradlew assembleDebug
