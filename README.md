@@ -8,8 +8,8 @@
 
 ## 手机端界面
 查看监控画面
-![](https://github.com/yaunsine/video/master/imgs/app.jpg?raw=true)
+![](https://github.com/yaunsine/video/blob/master/imgs/app.jpg?raw=true)
 
 ## 电脑界面
 实时捕获监控画面
-![](https://github.com/yaunsine/video/master/imgs/pc.png?raw=true)
+![](https://github.com/yaunsine/video/blob/master/imgs/pc.png?raw=true)
