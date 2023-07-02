@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/FrameLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/directory_buttons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/directory_input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_margin="1dip"
+                android:width="80dip"
+                android:text="@string/btn_save"></Button>
+
+            <Button
+                android:id="@+id/btnDisconnect"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_margin="1dip"
+                android:width="80dip"
+                android:text="@string/server_disconnect"></Button>
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/FrameLayout02"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+
+        <com.xmobileapp.cammonitor.CamMonitorView
+            android:id="@+id/cmView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:drawSelectorOnTop="false" />
+    </FrameLayout>
+
+    <ScrollView
+        android:id="@+id/ScrollViewMessage"
+        android:layout_width="fill_parent"
+        android:layout_height="42dip"
+        android:background="#000000">CamMonitorView
+
+        <TextView
+            android:id="@+id/Message"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="1dip"
+            android:background="#000000"
+            android:textColor="#FFFFFF"
+            android:textSize="11dip"
+            android:textStyle="normal"></TextView>
+    </ScrollView>
+</LinearLayout>

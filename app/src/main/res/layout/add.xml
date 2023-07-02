@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tab1_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:id="@+id/tab1_layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dip">
+
+        <TableRow
+            android:id="@+id/TableRow01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dip"
+            android:layout_marginTop="5dip">
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_margin="0dip"
+                android:width="60dip"
+                android:height="16dip"
+                android:text="@string/add_ip"></TextView>
+
+            <EditText
+                android:id="@+id/FtpIp"
+                android:layout_width="2dip"
+                android:layout_height="46dip"
+                android:layout_marginLeft="1dip"
+                android:width="250dip"
+                android:text="你的ip"></EditText>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dip">
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="60dip"
+                android:text="@string/add_type"></TextView>
+
+            <Spinner
+                android:id="@+id/SpinnerFtpType"
+                android:layout_width="wrap_content"
+                android:layout_height="36dip"></Spinner>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dip">
+
+            <TextView
+                android:id="@+id/TextView04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="60dip"
+                android:text="@string/add_port"></TextView>
+
+            <EditText
+                android:id="@+id/FtpPort"
+                android:layout_width="wrap_content"
+                android:layout_height="46dip"
+                android:width="250dip"
+                android:numeric="integer"
+                android:text="8888"></EditText>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dip">
+
+            <TextView
+                android:id="@+id/TextView05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="60dip"
+                android:text="@string/add_username"></TextView>
+
+            <EditText
+                android:id="@+id/FtpUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="46dip"
+                android:width="250dip"
+                android:text="UserName"></EditText>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dip">
+
+            <TextView
+                android:id="@+id/TextView06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="60dip"
+                android:text="@string/add_password"></TextView>
+
+            <EditText
+                android:id="@+id/FtpPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="46dip"
+                android:width="250dip"
+                android:text="123456"></EditText>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dip">
+
+            <TextView
+                android:id="@+id/TextView07"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="60dip"
+                android:text="@string/add_localdir"></TextView>
+
+            <EditText
+                android:id="@+id/FtpLocalDir"
+                android:layout_width="wrap_content"
+                android:layout_height="46dip"
+                android:width="250dip"
+                android:text="/sdcard"></EditText>
+        </TableRow>
+
+
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dip"
+        android:layout_marginTop="5dip"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/BtnTest"
+            android:layout_width="60dip"
+            android:layout_height="fill_parent"
+            android:layout_margin="2dip"
+            android:width="60dip"
+            android:text="@string/btn_test"></Button>
+
+        <Button
+            android:id="@+id/BtnSave"
+            android:layout_width="60dip"
+            android:layout_height="fill_parent"
+            android:layout_margin="2dip"
+            android:width="60dip"
+            android:text="@string/btn_save"></Button>
+
+        <Button
+            android:id="@+id/BtnCancle"
+            android:layout_width="60dip"
+            android:layout_height="fill_parent"
+            android:layout_margin="2dip"
+            android:width="60dip"
+            android:maxWidth="60dip"
+            android:text="@string/btn_cancle"></Button>
+    </LinearLayout>
+</LinearLayout>
+

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_intro"></TextView>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/SpinnerLdapConfig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="270dip"></Spinner>
+
+        <Button
+            android:id="@+id/BtnConnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/connect"></Button>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/LinearLayout02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dip"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/BtnNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dip"
+            android:width="50dip"
+            android:text="@string/btn_new"></Button>
+
+        <Button
+            android:id="@+id/BtnModify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dip"
+            android:width="50dip"
+            android:text="@string/btn_modify"></Button>
+
+        <Button
+            android:id="@+id/BtnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dip"
+            android:width="50dip"
+            android:text="@string/btn_delete"></Button>
+    </LinearLayout>
+</LinearLayout>
