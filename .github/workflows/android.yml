@@ -33,7 +33,6 @@ jobs:
       - name: grant execute to gradlew
         # 运行命令
         run: chmod +x gradlew
-    # 打包release
       - name: Build with Gradle
         run: bash ./gradlew assembleRelease
 
