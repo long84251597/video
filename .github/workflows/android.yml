@@ -18,13 +18,13 @@ jobs:
       - uses: actions/checkout@v1
       # step：设置jdk版本
       # step 名称
-      - name: set up JDK 11
+      - name: set up JDK 8
         # 引用公共action
-        uses: actions/setup-java@v3
+        uses: actions/setup-java@v1
         with:
           # 设置参数
           distribution: 'zulu'
-          java-version: '11'
+          java-version: '8'
       # step：打包apk
       - name: load sdk
         uses: android-actions/setup-android@v2
