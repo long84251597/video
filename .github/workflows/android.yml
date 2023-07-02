@@ -25,6 +25,7 @@ jobs:
           # 设置参数
           java-version: 1.8
       # step：打包apk
+      - name: load sdk
       - uses: android-actions/setup-android@v2
       - run: sdkmanager "platforms;android-26"
       - name: Build with Gradle
