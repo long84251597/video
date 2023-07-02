@@ -20,6 +20,10 @@ jobs:
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
-    # 打包release
     - name: Build with Gradle
-      run: bash ./gradlew assembleRelease
+      run: bash ./gradlew assembleRelease --stacktrace
+    - name: Upload APK
+      uses: actions/upload-artifact@v1
+      with:
+        name: apk
+        path: app/build/outputs/apk/debug/app-debug.apk
